@@ -7,7 +7,7 @@
 
 
 # Description
-This repository is the implementation of the project "Reinforcement Learning-based Placement of Charging Stations in Urban Road Networks" by Leonie Frantzen, Nicolas Tempelmeier, Ashutosh Sao and Elena Demidova. In this project, we train a model with Deep Q Network Reinforcement Learning to place charging stations in a road network.
+This repository is the implementation of the project "Reinforcement Learning-based Placement of Charging Stations in Urban Road Networks" by Leonie von Wahl, Nicolas Tempelmeier, Ashutosh Sao and Elena Demidova. In this project, we train a model with Deep Q Network Reinforcement Learning to place charging stations in a road network.
 
 **We will upload the code at acceptance of the corresponding paper. We apologize for any inconvenience.**
 
