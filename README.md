@@ -22,7 +22,7 @@ pip install -r final_requirements.txt
 # Toy Example Dataset
 Before training the models, some data are needed. The data preparation can be done with 
 `load_graph.py` and `nodes_preparation.py`. However, we will not upload our own data here. 
-Instead, we offer a preprocessed toy example of data. With this toy example, the training and 
+Instead, we offer a preprocessed toy example of fake data. With this toy example, the training and 
 evaluation can be tested.
 
 
