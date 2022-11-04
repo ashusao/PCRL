@@ -17,7 +17,7 @@ We use [Stable Baselines3](https://github.com/DLR-RM/stable-baselines3) as Reinf
 To install the requirements
 ```bash
 git clone git@github.com:frantz03/PCRL.git
-pip install -r requirements.txt
+pip install -r final_requirements.txt
 ```
 
 # Toy Example Dataset
