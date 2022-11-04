@@ -9,7 +9,6 @@
 # Description
 This repository is the implementation of the project "Reinforcement Learning-based Placement of Charging Stations in Urban Road Networks" by Leonie von Wahl, Nicolas Tempelmeier, Ashutosh Sao and Elena Demidova. In this project, we train a model with Deep Q Network Reinforcement Learning to place charging stations in a road network.
 
-**We will upload the code at acceptance of the corresponding paper. We apologize for any inconvenience.**
 
 # Installation
 We use [Stable Baselines3](https://github.com/DLR-RM/stable-baselines3) as Reinforcement training framework. Moreover, we use [Gym](https://github.com/openai/gym) to create the RL environment and [OSMnx](https://github.com/gboeing/osmnx) to work with road networks. We use Python 3.8.10.
