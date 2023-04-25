@@ -13,6 +13,12 @@ authors:
   - given-names: Leonie
     family-names: von Wahl
     orcid: 'https://orcid.org/0000-0003-0013-831X'
+  - given-names: 'Nicolas '
+    family-names: Tempelmeier
+  - given-names: Ashutosh
+    family-names: Sao
+  - given-names: 'Elena '
+    family-names: Demidova
 repository-code: 'https://github.com/ashusao/PCRL'
 license: MIT
 date-released: '2022-11-04'
