@@ -1,0 +1,16 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: PCLR
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Leonie
+    family-names: von Wahl
+    orcid: 'https://orcid.org/0000-0003-0013-831X'
+repository-code: 'https://github.com/ashusao/PCRL'
+license: MIT
+date-released: '2022-11-04'
