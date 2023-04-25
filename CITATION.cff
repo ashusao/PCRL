@@ -2,7 +2,9 @@
 # Visit https://bit.ly/cffinit to generate yours today!
 
 cff-version: 1.2.0
-title: PCLR
+title: >-
+  Reinforcement Learning-based Placement of Charging
+  Stations in Urban Road Networks
 message: >-
   If you use this software, please cite it using the
   metadata from this file.
