@@ -3,7 +3,7 @@ import osmnx as ox
 import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
 import numpy as np
-import sys
+import sys, os
 sys.path.append("..")  # Adds higher directory to python modules path.
 import evaluation_framework as ef
 
@@ -62,5 +62,8 @@ if __name__ == '__main__':
 
     with (open("../Results/" + ort + "/plan_RL.pkl", "rb")) as f:
         plan = pickle.load(f)
+
+    os.makedirs("../Images/Result_Plots/" + ort, exist_ok=True)
+    
     visualise_stations(G, plan, "../Images/Result_Plots/" + ort + "/RL_" + ort + ".png")
 
