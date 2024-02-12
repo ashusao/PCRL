@@ -84,6 +84,8 @@ if __name__ == '__main__':
     log_dir = "tmp_Toy_Example/"
     modelname = "best_model_" + location + "_"
 
+    os.makedirs(log_dir, exist_ok=True)
+
     """
     Define and train the agent 
     """
