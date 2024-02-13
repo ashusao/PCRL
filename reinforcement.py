@@ -33,11 +33,6 @@ class SaveOnBestTrainingRewardCallback(BaseCallback):
         self.save_path = os.path.join(self.log_dir, self.modelname)
         self.best_mean_reward = -np.inf
 
-    def _init_callback(self) -> None:
-        # Create folder if needed
-        if self.save_path is not None:
-            os.makedirs(self.save_path, exist_ok=True)
-
     def _on_step(self) -> bool:
         if self.n_calls % self.check_freq == 0:
 
@@ -58,8 +53,6 @@ class SaveOnBestTrainingRewardCallback(BaseCallback):
                         print("New best mean reward: {:.2f}".format(self.best_mean_reward))
                         # we want to make sure that the best models are not overwritten
                         new_name = self.modelname + str(self.num_timesteps)
-                        if self.save_path is not None:
-                            os.makedirs(self.save_path, exist_ok=True)
                         self.save_path = os.path.join(self.log_dir, new_name)
                         print("Saving new best model to {}".format(self.save_path))
                     self.model.save(self.save_path)
