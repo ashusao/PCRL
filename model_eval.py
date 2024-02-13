@@ -22,7 +22,11 @@ Ab hier kommt die Evaluation.
 print("Evaluation for best model")
 env = Monitor(env, log_dir)  # new environment for evaluation
 
-model = DQN.load(log_dir + "best_model_" + location + "_400.zip")
+# get the best model
+prefix = "best_model_" + location + "_"
+files = [f for f in os.listdir(log_dir) if f.startswith(prefix)]
+modelname = prefix + str(max(int(f.split("_")[-1].split(".")[0]) for f in files)) + ".zip"
+model = DQN.load(log_dir + modelname)
 
 obs = env.reset()
 done = False
