@@ -1,6 +1,6 @@
 from stable_baselines3 import DQN
 from stable_baselines3.common.monitor import Monitor
-import pickle
+import pickle, os
 import env_plus as ev
 
 """
@@ -22,7 +22,11 @@ Ab hier kommt die Evaluation.
 print("Evaluation for best model")
 env = Monitor(env, log_dir)  # new environment for evaluation
 
-model = DQN.load(log_dir + "best_model_" + location + "_400.zip")
+# get the best model
+prefix = "best_model_" + location + "_"
+files = [f for f in os.listdir(log_dir) if f.startswith(prefix)]
+modelname = prefix + str(max(int(f.split("_")[-1].split(".")[0]) for f in files)) + ".zip"
+model = DQN.load(log_dir + modelname)
 
 obs = env.reset()
 done = False
@@ -34,6 +38,7 @@ while not done:
     if done:
         best_node_list, best_plan = env.render()
 
+os.makedirs("Results/" + location, exist_ok=True)
 
 pickle.dump(best_plan, open("Results/" + location + "/plan_RL.pkl", "wb"))
 with open("Results/" + location + "/nodes_RL.txt", 'w') as file:
